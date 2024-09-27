@@ -18,3 +18,4 @@ async def command_start_handler(message: Message, state: FSMContext) -> None:
         await state.set_state(RegistrationStates.phone)
     else:
         await message.answer(f"Quyidagi menudan kerakli bo'limni tanlang!", reply_markup=menu)
+
